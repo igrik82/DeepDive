@@ -2,7 +2,7 @@
 
 # Sample function
 def hello(name: str) -> str:
-    print(f'Hello, {name}!')
+    return (f'Hello, {name}!')
 
 
 func = hello
