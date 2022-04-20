@@ -6,4 +6,4 @@ def hello(name: str) -> str:
 
 
 func = hello
-func("Igor")
+print(func("Igor"))
