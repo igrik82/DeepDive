@@ -13,7 +13,7 @@ def counter(func):
     def inner(*args, **kwargs):
         nonlocal count
         count += 1
-        print(f"Function {func} was called {count} times")
+        print(f"Function {func.__name__} was called {count} times")
         return func(*args, **kwargs)
 
     return inner
