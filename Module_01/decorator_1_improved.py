@@ -10,9 +10,7 @@ def counter(func):
         '''Decorator for changing quantity arguments'''
         nonlocal count
         count += 1
-        # make args iterable and apply to reduce functions
-        args = tuple(args)
-        print(f"Function {func} was called {count} times")
+        print(f"Function \"{func.__name__}\" was called {count} times")
         return functools.reduce(func, args)
 
     return add_improved
@@ -24,5 +22,4 @@ def add(first: int, second: int) -> int:
     return first + second
 
 
-print(add(1, 2))
-help(add)
+print(add(1, 2, 3))
