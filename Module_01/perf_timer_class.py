@@ -31,7 +31,7 @@ times."
         return inner
 
 
-@TimeIt(100_000_000)
+@TimeIt(10_000_000)
 def add(first: int, second: int) -> int:
     '''Simple adder'''
     return first + second
